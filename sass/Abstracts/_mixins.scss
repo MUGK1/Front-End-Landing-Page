@@ -1,0 +1,50 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 320px:          Mobile S
+320 - 375px:        Mobile M
+375 - 425px:        Mobile L
+425 - 768px:        Table 
+(768 - 1024px):    is our normal style apply
+1024px + :          Big desktop
+
+$breakpoint argument choices:
+- mobile-s
+- mobile-m
+- mobile-l
+- tab
+- big-com
+
+ORDER: Base + Button + Typography > Components + Features + Workflow > page layout
+
+1em = 16px
+*/
+
+@mixin size($breakpoint) {
+
+    @if $breakpoint == mobile-s {
+        @media only screen and (max-width: 20em /*320px*/ ) {
+            @content;            
+        }
+    }
+    @if $breakpoint == mobile-m {
+        @media only screen and (max-width: 23.43em /*375px*/ ) {
+            @content;            
+        }
+    }
+    @if $breakpoint == mobile-l {
+        @media only screen and (max-width: 26.56em /*425px*/ ) {
+            @content;            
+        }
+    }
+    @if $breakpoint == tab {
+        @media only screen and (max-width: 48em /*768px*/ ) {
+            @content;            
+        }
+    }
+    @if $breakpoint == big-com {
+        @media only screen and (min-width: 64em /*1024+ px*/ ) {
+            @content;            
+        }
+    }
+    
+}

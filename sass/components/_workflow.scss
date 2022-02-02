@@ -1,0 +1,52 @@
+.workflow {
+  margin-top: -2rem;
+  margin-bottom: 10rem;
+
+  &__steps {
+    display: flex;
+    width: 89%;
+    margin: 0 auto;
+    justify-content: space-around;
+
+    @include size(mobile-s) {
+      flex-direction: column;
+    }
+    @include size(mobile-m) {
+      flex-direction: column;
+    }
+    @include size(mobile-l) {
+      flex-direction: column;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+    &:not(:first-child) {
+      @include size(mobile-s) {
+        margin-top: 2.5rem;
+      }
+      @include size(mobile-m) {
+        margin-top: 2.5rem;
+      }
+      @include size(mobile-l) {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+
+  &__icon {
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-bottom: 2rem;
+  }
+
+  &__ti {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,165 @@
+.footer {
+  background-color: hsl(204, 25%, 92%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 1.5rem;
+
+  @include size(mobile-s) {
+    flex-direction: column;
+  }
+  @include size(mobile-m) {
+    flex-direction: column;
+  }
+  @include size(mobile-l) {
+    flex-direction: column;
+  }
+
+  &__logo-f {
+    height: 4rem;
+    width: 4rem;
+
+    @include size(mobile-s) {
+      margin-bottom: 2rem;
+    }
+    @include size(mobile-m) {
+      margin-bottom: 2rem;
+    }
+    @include size(mobile-l) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__help {
+    margin-right: 18%;
+
+    @include size(mobile-s) {
+      margin-bottom: 2rem;
+      margin-right: 0;
+    }
+    @include size(mobile-m) {
+      margin-bottom: 2rem;
+      margin-right: 0;
+    }
+    @include size(mobile-l) {
+      margin-bottom: 2rem;
+      margin-right: 0;
+    }
+  }
+
+  &__help-container {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+  }
+
+  &__f-conup {
+    display: flex;
+    margin-bottom: 1rem;
+
+    @include size(mobile-s) {
+      margin-bottom: 0;
+      flex-direction: column;
+    }
+    @include size(mobile-m) {
+      margin-bottom: 0;
+      flex-direction: column;
+    }
+    @include size(mobile-l) {
+      margin-bottom: 0;
+      flex-direction: column;
+    }
+
+    &--lis {
+      &:not(:last-child) {
+        margin-right: 8rem;
+
+        @include size(mobile-s) {
+          margin-right: 0;
+        }
+        @include size(mobile-m) {
+          margin-right: 0;
+        }
+        @include size(mobile-l) {
+          margin-right: 0;
+        }
+      }
+
+      @include size(mobile-s) {
+        margin-bottom: 1.4rem;
+      }
+      @include size(mobile-m) {
+        margin-bottom: 1.4rem;
+      }
+      @include size(mobile-l) {
+        margin-bottom: 1.4rem;
+      }
+    }
+  }
+
+  &__f-con {
+    display: flex;
+
+    @include size(mobile-s) {
+      flex-direction: column;
+    }
+    @include size(mobile-m) {
+      flex-direction: column;
+    }
+    @include size(mobile-l) {
+      flex-direction: column;
+    }
+
+
+    &--lis {
+      &:not(:last-child) {
+        margin-right: 6rem;
+
+        @include size(mobile-s) {
+          margin-right: 0;
+        }
+        @include size(mobile-m) {
+          margin-right: 0;
+        }
+        @include size(mobile-l) {
+          margin-right: 0;
+        }
+      }
+
+      @include size(mobile-s) {
+        margin-bottom: 1.4rem;
+      }
+      @include size(mobile-m) {
+        margin-bottom: 1.4rem;
+      }
+      @include size(mobile-l) {
+        margin-bottom: 1.4rem;
+      }
+    }
+  }
+
+  &__icons {
+    height: 1.4rem;
+    width: 1.4rem;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 1.1rem;
+
+      @include size(mobile-s) {
+        margin-right: 2.4rem;
+      }
+      @include size(mobile-m) {
+        margin-right: 2.4rem;
+      }
+      @include size(mobile-l) {
+        margin-right: 2.4rem;
+      }
+    }
+  }
+}
+
+.lis {
+  text-decoration: none;
+  color: $color-Dark-Grayish-Blue;
+}

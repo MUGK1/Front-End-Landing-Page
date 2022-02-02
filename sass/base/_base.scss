@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  ::selection {
+    color: #fff;
+    background-color: $color-Dark-Grayish-Blue;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 112.5%; // 1rem = 18px
+
+  @include size(mobile-s) {
+    font-size: 62.5%; // 1rem = 10px
+  }
+  @include size(mobile-m) {
+    font-size: 75%; // 1rem = 12px
+  }
+  @include size(mobile-l) {
+    font-size: 87.5%; // 1rem = 14px
+  }
+}
+
+body {
+  text-align: center;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+}

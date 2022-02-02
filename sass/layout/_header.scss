@@ -1,0 +1,62 @@
+.header {
+  background: url(../../images/bg-header-desktop.png) no-repeat;
+  background-size: contain;
+  max-height: 100vh;
+
+  @include size(mobile-s) {
+    background: url(../../images/bg-header-mobile.png) no-repeat;
+    background-size: contain;
+  }
+  @include size(mobile-m) {
+    background: url(../../images/bg-header-mobile.png) no-repeat;
+    background-size: contain;
+  }
+  @include size(mobile-l) {
+    background: url(../../images/bg-header-mobile.png) no-repeat;
+    background-size: contain;
+  }
+
+}
+
+.web-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+
+  @include size(mobile-s) {
+    width: 81%;
+  }
+  @include size(mobile-m) {
+    width: 81%;
+  }
+  @include size(mobile-l) {
+    width: 81%;
+  }
+
+  &__logo {
+    margin: 1.5rem 0;
+    width: 7rem;
+    margin-top: 7rem;
+    animation: moveInTop .9s ease-out;
+  }
+
+  &__head {
+    animation: moveInLeft .9s ease-out;
+  }
+
+  &__about {
+    margin-bottom: 3rem;
+    animation: moveInRight .9s ease-out;
+  }
+
+  &__button-con {
+    align-items: center;
+    margin-bottom: 1rem;
+    
+    
+    
+  }
+}

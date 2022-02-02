@@ -1,0 +1,54 @@
+.custemers {
+  margin-bottom: 10rem;
+
+  @include size(mobile-l) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  &__logo {
+    width: 7.6rem;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+
+      @include size(mobile-s) {
+        margin-right: 0;
+      }
+      @include size(mobile-m) {
+        margin-right: 0;
+      }
+      @include size(mobile-l) {
+        margin-right: 0;
+      }
+    }
+
+    &:last-child {
+      @include size(mobile-s) {
+        margin-bottom: 9rem;
+      }
+      @include size(mobile-m) {
+        margin-bottom: 9rem;
+      }
+      @include size(mobile-l) {
+        margin-bottom: 9rem;
+      }
+    }
+
+    @include size(mobile-s) {
+      width: 9rem;
+      margin-bottom: 5rem;
+    }
+    @include size(mobile-m) {
+      width: 9rem;
+      margin-bottom: 5rem;
+    }
+    @include size(mobile-l) {
+      width: 9rem;
+      margin-bottom: 5rem;
+    }
+  }
+}

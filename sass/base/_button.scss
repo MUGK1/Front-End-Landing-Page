@@ -1,0 +1,67 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    color: #fff;
+
+    border-radius: 1000px;
+    text-decoration: none;
+    text-align: center;
+
+    border: none;
+
+    @include size(mobile-s) {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+    @include size(mobile-m) {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+    @include size(mobile-l) {
+      padding: 0.9rem 7rem;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &--blue {
+    background-color: $color-Light-Blue;
+    box-shadow: 0 3px 0 hsl(233, 45%, 42%);
+
+    @include size(mobile-s) {
+      display: block;
+    }
+    @include size(mobile-m) {
+      display: block;
+    }
+    @include size(mobile-l) {
+      display: block;
+    }
+  }
+
+  &--cyan {
+    background-color: $color-Strong-Cyan;
+    box-shadow: 0 3px 0 hsl(171, 64%, 35%);
+    @include size(mobile-s) {
+      display: block;
+    }
+    @include size(mobile-m) {
+      display: block;
+    }
+    @include size(mobile-l) {
+      display: block;
+    }
+  }
+
+  &--animated {
+    animation: moveInBottom 1.2s ease-out;
+  }
+}
