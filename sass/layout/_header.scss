@@ -1,22 +1,3 @@
-.header {
-  background: url(../../images/bg-header-desktop.png) no-repeat;
-  background-size: contain;
-  max-height: 100vh;
-
-  @include size(mobile-s) {
-    background: url(../../images/bg-header-mobile.png) no-repeat;
-    background-size: contain;
-  }
-  @include size(mobile-m) {
-    background: url(../../images/bg-header-mobile.png) no-repeat;
-    background-size: contain;
-  }
-  @include size(mobile-l) {
-    background: url(../../images/bg-header-mobile.png) no-repeat;
-    background-size: contain;
-  }
-
-}
 
 .web-info {
   display: flex;

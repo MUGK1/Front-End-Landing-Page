@@ -85,7 +85,22 @@ html {
 body {
   text-align: center;
   font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  background: url(../../images/bg-header-desktop.png) no-repeat;
+  background-size: contain;
+  max-height: 100vh; }
+  @media only screen and (max-width: 20em) {
+    body {
+      background: url(../../images/bg-header-mobile.png) no-repeat;
+      background-size: contain; } }
+  @media only screen and (max-width: 23.43em) {
+    body {
+      background: url(../../images/bg-header-mobile.png) no-repeat;
+      background-size: contain; } }
+  @media only screen and (max-width: 26.56em) {
+    body {
+      background: url(../../images/bg-header-mobile.png) no-repeat;
+      background-size: contain; } }
 
 .u-mave-up {
   transform: translateY(-4rem); }
@@ -130,12 +145,13 @@ body {
   padding: 0.8rem 1.8rem;
   font-size: 1rem;
   font-weight: 600;
-  margin-right: 0.5rem;
   color: #fff;
   border-radius: 1000px;
   text-decoration: none;
   text-align: center;
   border: none; }
+  .btn:not(:last-child), .btn:link:not(:last-child), .btn:visited:not(:last-child) {
+    margin-right: .7rem; }
   @media only screen and (max-width: 20em) {
     .btn:not(:last-child), .btn:link:not(:last-child), .btn:visited:not(:last-child) {
       margin-bottom: 2rem; } }
@@ -150,7 +166,9 @@ body {
 
 .btn--blue {
   background-color: #6173ff;
-  box-shadow: 0 3px 0 #3b469b; }
+  box-shadow: 0 3px 0 #3b469b;
+  transition: all .5s;
+  overflow: hidden; }
   @media only screen and (max-width: 20em) {
     .btn--blue {
       display: block; } }
@@ -160,10 +178,19 @@ body {
   @media only screen and (max-width: 26.56em) {
     .btn--blue {
       display: block; } }
+  .btn--blue:hover {
+    overflow: hidden;
+    color: #9fabb2;
+    background-color: #fff;
+    border: 0.16rem solid #8a99ff;
+    box-shadow: none;
+    transition: all .2s; }
 
 .btn--cyan {
   background-color: #26baa4;
-  box-shadow: 0 3px 0 #209281; }
+  box-shadow: 0 3px 0 #209281;
+  transition: all .3s;
+  overflow: hidden; }
   @media only screen and (max-width: 20em) {
     .btn--cyan {
       display: block; } }
@@ -173,6 +200,13 @@ body {
   @media only screen and (max-width: 26.56em) {
     .btn--cyan {
       display: block; } }
+  .btn--cyan:hover {
+    overflow: hidden;
+    color: #9fabb2;
+    background-color: #fff;
+    border: 0.16rem solid #5cccbb;
+    box-shadow: none;
+    transition: all .2s; }
 
 .btn--animated {
   animation: moveInBottom 1.2s ease-out; }
@@ -345,23 +379,6 @@ body {
       .custemers__logo {
         width: 9rem;
         margin-bottom: 5rem; } }
-
-.header {
-  background: url(../../images/bg-header-desktop.png) no-repeat;
-  background-size: contain;
-  max-height: 100vh; }
-  @media only screen and (max-width: 20em) {
-    .header {
-      background: url(../../images/bg-header-mobile.png) no-repeat;
-      background-size: contain; } }
-  @media only screen and (max-width: 23.43em) {
-    .header {
-      background: url(../../images/bg-header-mobile.png) no-repeat;
-      background-size: contain; } }
-  @media only screen and (max-width: 26.56em) {
-    .header {
-      background: url(../../images/bg-header-mobile.png) no-repeat;
-      background-size: contain; } }
 
 .web-info {
   display: flex;

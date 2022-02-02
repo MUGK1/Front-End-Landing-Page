@@ -32,4 +32,21 @@ body {
   text-align: center;
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 400;
+
+  background: url(../../images/bg-header-desktop.png) no-repeat;
+  background-size: contain;
+  max-height: 100vh;
+
+  @include size(mobile-s) {
+    background: url(../../images/bg-header-mobile.png) no-repeat;
+    background-size: contain;
+  }
+  @include size(mobile-m) {
+    background: url(../../images/bg-header-mobile.png) no-repeat;
+    background-size: contain;
+  }
+  @include size(mobile-l) {
+    background: url(../../images/bg-header-mobile.png) no-repeat;
+    background-size: contain;
+  }
 }

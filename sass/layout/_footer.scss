@@ -99,6 +99,7 @@
 
   &__f-con {
     display: flex;
+    
 
     @include size(mobile-s) {
       flex-direction: column;

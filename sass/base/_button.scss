@@ -5,7 +5,7 @@
     padding: 0.8rem 1.8rem;
     font-size: 1rem;
     font-weight: 600;
-    margin-right: 0.5rem;
+    
     color: #fff;
 
     border-radius: 1000px;
@@ -13,6 +13,10 @@
     text-align: center;
 
     border: none;
+
+    &:not(:last-child) {
+      margin-right: .7rem;
+    }
 
     @include size(mobile-s) {
       &:not(:last-child) {
@@ -35,6 +39,8 @@
   &--blue {
     background-color: $color-Light-Blue;
     box-shadow: 0 3px 0 hsl(233, 45%, 42%);
+    transition: all .5s;
+    overflow: hidden;
 
     @include size(mobile-s) {
       display: block;
@@ -44,12 +50,25 @@
     }
     @include size(mobile-l) {
       display: block;
+    }
+
+    &:hover {
+      overflow: hidden;
+      color: $color-Grayish-Blue;
+      background-color: #fff;
+      border: .16rem solid hsla(232, 100%, 77%, 1);
+      box-shadow: none;
+
+      transition: all .2s;
     }
   }
 
   &--cyan {
     background-color: $color-Strong-Cyan;
     box-shadow: 0 3px 0 hsl(171, 64%, 35%);
+    transition: all .3s;
+    overflow: hidden;
+
     @include size(mobile-s) {
       display: block;
     }
@@ -58,6 +77,16 @@
     }
     @include size(mobile-l) {
       display: block;
+    }
+
+    &:hover {
+      overflow: hidden;
+      color: $color-Grayish-Blue;
+      background-color: #fff;
+      border: .16rem solid hsla(171, 52%, 58%, 1);
+      box-shadow: none;
+
+      transition: all .2s;
     }
   }
 
